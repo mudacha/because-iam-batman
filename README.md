@@ -1,3 +1,4 @@
+# Important: run npm install before attempting to run project as node_modules were not commited. 
 # BecauseIamBatman
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
