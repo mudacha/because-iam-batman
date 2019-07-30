@@ -1,0 +1,26 @@
+<div class="col-md-3 col-sm-5 col-xs-5 wrapper image-background">
+  <img [src]="assetPath">
+</div>
+<div class="col-md-9 col-sm-7 col-xs-5 wrapper content">
+  <div class="col-md-12 title">
+    <h1>{{batItem.Title}}</h1>
+  </div>
+  <div class="col-md-12 meta-row">
+      <div class="col-md-4">
+        <div class="col-md-4 rating">
+          <p>{{batItem.Rated}}</p>
+        </div>
+        <div class="col-md-8 runtime">
+         {{batItem.Runtime}}
+        </div>
+      </div>
+      <div class="col-md-8 release-date">
+        {{batItem.Released}}
+      </div>
+  </div>
+  <div class="col-md-12 description">
+   {{batItem.Plot}}
+  </div>
+  <button class="btn bat-button">View on IMDB</button>
+</div>
+
