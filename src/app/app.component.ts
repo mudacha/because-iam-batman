@@ -25,13 +25,13 @@ export class AppComponent implements OnInit {
     this.http.get<BatMetaData[]>(this.baseUrl + 's=Batman' + this.apiKey)
     .pipe(
       map(response => {
-      const batArray: BatMetaData[] = [];
+      const tempBatArray: any[] = [];
       for (const key in response) {
         if (key === 'Search') {
-        batArray.push(response[key]);
+        tempBatArray.push(response[key]);
         }
       }
-      return batArray;
+      return tempBatArray;
     })
   )
     .subscribe(batData => {
